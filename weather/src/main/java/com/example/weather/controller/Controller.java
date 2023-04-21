@@ -14,4 +14,8 @@ public class Controller {
         return "";
     }
 
+
+    @RequestMapping("get")
+    public // TODO экдпоинт цитат
+
 }
