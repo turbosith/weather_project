@@ -7,17 +7,16 @@ SET NAMES 'utf8';
 create TABLE cities (
     name varchar (32) PRIMARY KEY not null,
     latitude float not null,
-    longitude float not null;
-
-)
+    longitude float not null
+);
 
 create TABLE quotes (
     id bigint PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    author_name varchar (32) NOT NULL,
-    text varchar (32) NOT NULL);
-)
+    author_name varchar (64) NOT NULL,
+    text varchar (255) NOT NULL
+);
 
-insert into quotes(name, text) values
+insert into quotes(author_name, text) values
 ("Федор Достоевский", "Жизнь задыхается без цели"),
 ("Теодор Рузвель", "Никогда не ошибается тот, кто ничего не делает"),
 ("Наполеон Бонапарт", "Дай человеку власть, и ты узнаешь, кто он"),
